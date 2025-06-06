@@ -1,28 +1,119 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-body{
-  font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #F9F3EB;
+  color: #333;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1200px;
   margin: 0 auto;
-  background-color:rgb(249, 243, 235)
+  padding: 0 20px;
 }
-.logo{
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
 
-    position: absolute;
-    width: 204px;
-    height: 33px;
-    left: 94.14px;
-    top: 40px;
-    color: #323334; 
-
-    transform: rotate(0.25deg);
-
+/* HEADER */
+.header {
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
-.tools{
-    display: flex;
-    width: auto;
-    justify-content: end;
-    padding: 25px;
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+  color: #333;
+}
+.nav a:hover {
+  color: #555;
+}
+.tools img {
+  margin-left: 20px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.tools img:hover {
+  opacity: 1;
+}
+
+/* HERO */
+.hero {
+  background: url('https://via.placeholder.com/1600x600') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 120px 0;
+}
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+.btn {
+  background: #333;
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 30px;
+}
+.btn:hover {
+  background: #555;
+}
+
+/* PRODUCTS */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 60px 0;
+}
+.product-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  padding-bottom: 20px;
+}
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+.product-card h3 {
+  margin: 15px;
+  font-size: 1.1rem;
+}
+.product-card .price {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #E91E63;
+}
+
+/* FOOTER */
+.footer {
+  background: #fff;
+  padding: 40px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+  border-top: 1px solid #eee;
 }

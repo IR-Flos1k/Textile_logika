@@ -1,21 +1,57 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Space Textile</title>
-    <link rel="stylesheet" href="Style.css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Moody Store</title>
+  <link rel="stylesheet" href="Style.css" />
 </head>
 <body>
-    <script src="script.js"></script>
-    <header>
-        <h1 class="logo">Space Textile</h1>
-        <div class="tools">
-          <img src="Icons/Srch.svg" alt="Srch" width="27">
-          <p>Sign in</p>
-          <img src="Icons/Basket.svg" alt="Basket" width="27">
-          <img src="Icons/Favorite.svg" alt="Favorite" width="27">
-          </div>
-    </header>
+  <header class="header">
+    <div class="container header__inner">
+      <h1 class="logo">Moody Store</h1>
+      <nav class="nav">
+        <a href="#">Головна</a>
+        <a href="#">Каталог</a>
+        <a href="#">Про нас</a>
+        <a href="#">Контакти</a>
+      </nav>
+      <div class="tools">
+        <img src="Icons/Srch.svg" alt="Пошук" width="22" />
+        <img src="Icons/Favorite.svg" alt="Улюблене" width="22" />
+        <img src="Icons/Basket.svg" alt="Кошик" width="22" />
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Сезонні вибрані товари</h2>
+      <p>Естетика, натхнення, якість в кожній речі</p>
+      <a href="#" class="btn">Переглянути колекцію</a>
+    </div>
+  </section>
+
+  <section class="products container">
+    <!-- Приклади товарів -->
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300" alt="Product" />
+      <h3>Назва товару</h3>
+      <p class="price">₴1 299</p>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300" alt="Product" />
+      <h3>Інший товар</h3>
+      <p class="price">₴899</p>
+    </div>
+    <!-- ... -->
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; Moody Store, 2025</p>
+      <p>Підпишіться на нас у соцмережах</p>
+    </div>
+  </footer>
 </body>
 </html>
