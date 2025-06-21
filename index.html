@@ -3,55 +3,130 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Moody Store</title>
+  <title>Space Textile</title>
   <link rel="stylesheet" href="Style.css" />
 </head>
 <body>
   <header class="header">
     <div class="container header__inner">
-      <h1 class="logo">Moody Store</h1>
+      
+      <div class="lg">
+        <h1 class="logo">Space Textile</h1>
+        <div class="tools">
+          <img src="Icons/Srch.svg" alt="Пошук" width="22" />
+          <img src="Icons/Favorite.svg" alt="Улюблене" width="22" />
+          <img src="Icons/Basket.svg" alt="Кошик" width="22" />
+        </div>
+      </div>
+
       <nav class="nav">
         <a href="#">Головна</a>
         <a href="#">Каталог</a>
         <a href="#">Про нас</a>
         <a href="#">Контакти</a>
       </nav>
-      <div class="tools">
-        <img src="Icons/Srch.svg" alt="Пошук" width="22" />
-        <img src="Icons/Favorite.svg" alt="Улюблене" width="22" />
-        <img src="Icons/Basket.svg" alt="Кошик" width="22" />
-      </div>
+     
     </div>
   </header>
 
   <section class="hero">
     <div class="container">
-      <h2>Сезонні вибрані товари</h2>
-      <p>Естетика, натхнення, якість в кожній речі</p>
+      <h2>Найкрaщі подарунки на будь-яке свято</h2>
+      <p>Естетика, комфорт, якість в кожній речі</p>
       <a href="#" class="btn">Переглянути колекцію</a>
     </div>
   </section>
 
+ <!-- Приклади товарів -->
   <section class="products container">
-    <!-- Приклади товарів -->
-    <div class="product-card">
-      <img src="https://via.placeholder.com/300" alt="Product" />
-      <h3>Назва товару</h3>
-      <p class="price">₴1 299</p>
+
+    <div class="product-card towel">
+      <img src="images/towel.webp" alt="Product" />
+      <div class="prod_cell">
+        <h3>Рушнички мікрофіброві, лицьові</h3>
+        <a href="#" class="btn">Переглянути колекцію</a>
+      </div>
     </div>
-    <div class="product-card">
-      <img src="https://via.placeholder.com/300" alt="Product" />
-      <h3>Інший товар</h3>
-      <p class="price">₴899</p>
+
+    <div class="product-card soft_toys">
+      <img src="Images/towel_for_car.webp" alt="Product" />
+      <div class="prod_cell">
+        <h3>Автомобільний мікрофібровий рушник</h3>
+        <a href="#" class="btn">Переглянути колекцію</a>
+      </div>
     </div>
-    <!-- ... -->
+    
   </section>
 
+<section class="bedclothes">
+  <div class="BD_con">
+    <h3>Набір постелі</h3>
+    <p class="price"> 1 500₴</p>
+    <p>М’якість, у яку хочеться зануритися!</p>
+    <a href="#" class="btn">Замовити</a>
+  </div>
+</section>
+
   <footer class="footer">
-    <div class="container">
-      <p>&copy; Moody Store, 2025</p>
-      <p>Підпишіться на нас у соцмережах</p>
+
+    <section class="foot">
+
+      <div>
+        <h4>
+          Contacts
+        </h4>
+        <p>
+          +3809********
+        </p>
+        <p>
+          store@gmail.com
+        </p>
+
+        <div>
+          <img src="Icons/FB.svg" alt="FB" width="15" />
+          <img src="Icons/Inst.svg" alt="inst" width="30" />
+        </div>
+      </div>
+
+      <div>
+        <h4>
+          Shoping
+        </h4>
+        <p>
+          Cart
+        </p>
+        <p>
+          Orders
+        </p>
+        <p>
+          Wishlist
+        </p>
+        <p>
+          Shoping detalis
+        </p>
+      </div>
+
+      <div>
+        <h4>
+          More Link
+        </h4>
+        <p>
+          Blog
+        </p>
+        <p>
+          Guides
+        </p>
+        <p>
+          New Arrivals
+        </p>
+      </div>
+
+    </section>
+
+    <div class="container watermark">
+      <p>&copy; Space Textile, 2025</p>
     </div>
+
   </footer>
 </body>
 </html>

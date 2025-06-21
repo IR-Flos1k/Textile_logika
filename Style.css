@@ -7,13 +7,14 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background: #F9F3EB;
+  background: #f8eeee;
   color: #333;
   line-height: 1.5;
 }
 
 .container {
   max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -23,49 +24,82 @@ body {
   background: #fff;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
-.header__inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-}
+
 .logo {
   font-size: 1.5rem;
   font-weight: 700;
 }
+
+.lg{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav{
+  width: 100%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin: 26px;
+  padding: 26px;
+  display: flex;
+  justify-content: center;
+}
+
 .nav a {
   margin: 0 15px;
   text-decoration: none;
   font-weight: 500;
   color: #333;
 }
+
 .nav a:hover {
   color: #555;
 }
+
+.tools{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .tools img {
   margin-left: 20px;
   cursor: pointer;
   opacity: 0.8;
 }
+
 .tools img:hover {
   opacity: 1;
 }
 
 /* HERO */
 .hero {
-  background: url('https://via.placeholder.com/1600x600') center/cover no-repeat;
+  background: url('/Images/hero.png') center center/cover no-repeat;
+  width: 100%;
+  max-width: 1200px;
+  height: 566px;
   color: #fff;
   text-align: center;
   padding: 120px 0;
+  margin: 0 auto;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .hero h2 {
   font-size: 2.5rem;
   margin-bottom: 15px;
 }
+
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 30px;
 }
+
 .btn {
   background: #333;
   color: #fff;
@@ -74,46 +108,113 @@ body {
   font-size: 1rem;
   font-weight: 500;
   border-radius: 30px;
+  width:max-content;
+  margin: 10px;
 }
+
 .btn:hover {
   background: #555;
 }
 
 /* PRODUCTS */
 .products {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 30px;
   padding: 60px 0;
+  display: flex;
+  justify-content: space-around;
 }
+
 .product-card {
-  background: #fff;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   text-align: center;
   padding-bottom: 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding:5px;
+  margin: 10px;
 }
+
 .product-card img {
   width: 100%;
+  max-width: 200px;
   height: auto;
 }
+
 .product-card h3 {
   margin: 15px;
   font-size: 1.1rem;
 }
-.product-card .price {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #E91E63;
+
+.prod_cell{
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+}
+
+/*bedclothes banner*/
+.bedclothes{
+  background: url('Images/bedclothes.png') center center/cover no-repeat;
+  width: 100%;
+  max-width: 1200px;
+  height: 566px;
+  margin: 0 auto;
+  padding: 100px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.BD_con{
+  position: absolute;
+  width: 350px;
+  height: 250px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 40px;
+  transform: rotate(0.25deg);
+  padding: 5px 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.BD_con h3{
+width: 212px;
+height: 33px;
+color: #323334;
+transform: rotate(0.25deg);
+
+}
+
+.price{
+width: 89px;
+height: 33px;
+color: #7B5136;
+transform: rotate(0.25deg);
+
 }
 
 /* FOOTER */
+footer{
+  margin-top: 20px;
+}
 .footer {
-  background: #fff;
+  background: #323334;
   padding: 40px 0;
   text-align: center;
   font-size: 0.9rem;
   color: #777;
   border-top: 1px solid #eee;
+}
+
+.foot{
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.watermark{
+  margin-top: 60px;
 }
